@@ -1,0 +1,395 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<meta name="theme-color" content="#120d1d">
+<title>For Tejashvi ♡</title>
+<link href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;600;700&family=Playfair+Display:ital,wght@0,500;0,600;0,700;1,500;1,600&display=swap" rel="stylesheet">
+<style>
+:root {
+  --bg:#100d18;
+  --cream:#fff5ee;
+  --muted:#b8aaba;
+  --pink:#ff9ab8;
+  --lilac:#c9a8ff;
+  --line:rgba(255,255,255,.11);
+}
+*{box-sizing:border-box}
+html{scroll-behavior:smooth}
+body{
+  margin:0;background:var(--bg);color:var(--cream);
+  font-family:'DM Sans',sans-serif;overflow-x:hidden;
+}
+body:before{
+  content:"";position:fixed;inset:0;pointer-events:none;z-index:-1;
+  background:
+    radial-gradient(ellipse at 15% 10%,rgba(180,99,175,.17),transparent 38%),
+    radial-gradient(ellipse at 85% 35%,rgba(255,119,155,.12),transparent 32%),
+    radial-gradient(ellipse at 50% 100%,rgba(132,93,199,.12),transparent 40%);
+}
+a{color:inherit;text-decoration:none}
+button{font:inherit;cursor:pointer}
+.nav{
+  position:fixed;z-index:20;top:0;left:0;right:0;
+  display:flex;justify-content:space-between;align-items:center;
+  gap:12px;padding:17px 7vw;
+  background:rgba(16,13,24,.78);backdrop-filter:blur(18px);
+  border-bottom:1px solid rgba(255,255,255,.06);
+}
+.brand{font:20px 'Playfair Display',serif;white-space:nowrap}
+.brand span{color:var(--pink)}
+.brand small{font:10px 'DM Sans',sans-serif;color:#a88da8}
+.navlinks{
+  display:flex;gap:20px;color:#d2c5d6;font-size:11px;
+  letter-spacing:1px;text-transform:uppercase
+}
+.navlinks a:hover{color:var(--pink)}
+.sound,.small-button{
+  border:1px solid rgba(255,154,184,.4);border-radius:999px;
+  background:transparent;color:#ffdce7;padding:10px 13px;font-size:12px;
+}
+.hero{
+  min-height:100svh;display:grid;place-items:center;text-align:center;
+  padding:120px 22px 80px;position:relative;isolation:isolate;
+}
+.eyebrow,.kicker,.tiny-label{
+  font-size:10px;letter-spacing:3px;text-transform:uppercase;
+  color:var(--pink);margin-bottom:20px;
+}
+h1{
+  font:500 clamp(58px,11vw,126px)/.98 'Playfair Display',serif;
+  letter-spacing:-3px;margin:0 0 24px;
+}
+h1 em{font-weight:500;color:var(--pink)}
+.hero p{
+  max-width:520px;margin:0 auto 30px;color:#c5b7ca;
+  font-size:15px;line-height:1.9;
+}
+.pill{
+  display:inline-flex;align-items:center;gap:10px;padding:13px 19px;
+  border:1px solid rgba(255,154,184,.45);border-radius:999px;
+  background:rgba(255,154,184,.09);color:#ffe5ee;transition:.25s;
+}
+.pill:hover{transform:translateY(-3px);background:#ff9ab81f}
+.hero-heart{font-size:24px;display:block;margin-bottom:20px;color:var(--pink);animation:beat 1.8s infinite}
+.scrollhint{
+  position:absolute;bottom:25px;left:50%;transform:translateX(-50%);
+  font-size:9px;letter-spacing:3px;color:#8e7e96;text-transform:uppercase;
+}
+.orb{position:absolute;border-radius:50%;pointer-events:none;animation:float 8s ease-in-out infinite}
+.orb.one{width:10px;height:10px;background:var(--pink);top:25%;left:15%;box-shadow:0 0 30px var(--pink)}
+.orb.two{width:7px;height:7px;background:var(--lilac);right:18%;top:34%;animation-delay:-3s}
+.orb.three{width:5px;height:5px;background:white;left:24%;bottom:22%;animation-delay:-5s}
+.hero:after{
+  content:"♡  ✧  ♡";position:absolute;bottom:75px;right:8%;
+  font:italic 18px 'Playfair Display',serif;color:#ffb0c7;
+  transform:rotate(-9deg);
+}
+.section{padding:95px 7vw;max-width:1200px;margin:auto}
+.section-head{
+  display:flex;justify-content:space-between;align-items:end;
+  gap:25px;margin-bottom:35px;
+}
+h2{
+  font:500 clamp(34px,5vw,58px)/1.1 'Playfair Display',serif;
+  letter-spacing:-1px;margin:0;
+}
+.section-head p{max-width:300px;color:var(--muted);font-size:13px;line-height:1.8;margin:0}
+.note-grid{display:grid;grid-template-columns:1.1fr .9fr;gap:18px}
+.note{
+  border:1px solid var(--line);border-radius:22px;padding:30px;
+  background:linear-gradient(145deg,#ffffff0e,#ffffff05);
+  min-height:225px;position:relative;overflow:hidden;
+  box-shadow:0 18px 55px #0002;
+}
+.note:before{
+  content:"";position:absolute;top:0;left:25px;width:48px;height:13px;
+  background:#ff9ab862;transform:rotate(-5deg);border-radius:2px;
+}
+.note.featured{background:linear-gradient(140deg,#ff9ab824,#c9a8ff10)}
+.number{font:italic 14px 'Playfair Display',serif;color:var(--pink);margin-bottom:25px}
+.note h3{font:500 27px 'Playfair Display',serif;margin-bottom:12px}
+.note p{color:#c3b7c9;font-size:14px;line-height:1.9}
+.deco{position:absolute;right:20px;bottom:0;font:80px 'Playfair Display',serif;color:#ff9ab81a}
+.reasons{display:grid;grid-template-columns:repeat(3,1fr);gap:14px}
+.reason{
+  border:1px solid var(--line);border-radius:18px;padding:23px;
+  background:#ffffff06;transition:.25s;min-height:175px;
+}
+.reason:hover{transform:translateY(-5px);border-color:#ff9ab85e}
+.reason:nth-child(2){background:#c9a8ff0c}
+.reason:nth-child(3){background:#ff9ab80c}
+.icon{font-size:22px;margin-bottom:20px}
+.reason h3{font:500 22px 'Playfair Display',serif;margin-bottom:10px}
+.reason p{color:var(--muted);font-size:13px;line-height:1.8;margin:0}
+.daily-note{
+  max-width:800px;margin:25px auto 0;border:1px dashed #ff9ab86e;
+  border-radius:18px;padding:24px;background:#ff9ab80b;text-align:center;
+}
+.tiny-label{font-size:10px;color:#c59bb7}
+.note-line{
+  font:italic 24px/1.5 'Playfair Display',serif;color:#ffe2eb;
+  margin:12px auto 18px;min-height:36px;transition:.2s;
+}
+.memory-wrap{display:grid;grid-template-columns:.8fr 1.2fr;gap:24px;align-items:stretch}
+.memory-intro{padding:25px 0}
+.memory-intro p{color:var(--muted);line-height:1.9;font-size:14px;max-width:350px;margin:20px 0}
+.memory-card{
+  min-height:280px;border-radius:24px;padding:28px;
+  background:linear-gradient(135deg,#31203a,#24172e 65%,#402037);
+  border:1px solid #ffffff17;display:flex;flex-direction:column;
+  justify-content:space-between;position:relative;overflow:hidden;
+}
+.memory-card:after{
+  content:"♡";position:absolute;right:-8px;top:-58px;
+  font:250px 'Playfair Display',serif;color:#ff9ab80c;
+}
+.date{font-size:10px;letter-spacing:3px;color:var(--pink);text-transform:uppercase}
+blockquote{
+  font:italic clamp(24px,3vw,38px)/1.4 'Playfair Display',serif;
+  margin:28px 0;position:relative;z-index:1;
+}
+.memory-card small{color:#c6b3ca}
+.letter-area{text-align:center;padding:100px 22px 110px}
+.letter-box{
+  max-width:700px;margin:auto;border:1px solid var(--line);
+  border-radius:26px;padding:clamp(28px,6vw,65px);
+  background:linear-gradient(145deg,#ffffff0e,#ffffff05);
+  position:relative;box-shadow:0 18px 55px #0002;
+}
+.letter-box:before{content:"✦";position:absolute;top:20px;left:25px;color:var(--pink)}
+.letter-box:after{content:"✦";position:absolute;bottom:20px;right:25px;color:var(--lilac)}
+.letter-box h2{margin-bottom:22px}
+.letter-box>p{font-size:15px;line-height:1.9;color:#cbbdce}
+.letter-text{display:none;text-align:left;margin-top:25px;padding-top:25px;border-top:1px solid var(--line)}
+.letter-text.open{display:block;animation:fadeUp .7s both}
+.letter-text p{font-size:14px;line-height:2;color:#cbbdce}
+.final-line{font:italic 25px 'Playfair Display',serif;color:var(--pink)!important;text-align:center;margin-top:24px}
+.footer{text-align:center;padding:35px 20px 45px;border-top:1px solid var(--line);color:#8d7e96;font-size:11px}
+.footer .big{font:italic 23px 'Playfair Display',serif;color:var(--pink);display:block;margin-bottom:12px}
+.handwritten{display:block;font:italic 15px 'Playfair Display',serif;color:#ffb5cb;transform:rotate(-2deg)}
+.madeby{display:block;margin-top:14px;color:#75677f;font-size:10px}
+#sprinkles{position:fixed;inset:0;pointer-events:none;z-index:30;overflow:hidden}
+.heart-bit{position:absolute;animation:rise 2.4s ease-out forwards;font-size:17px}
+.reveal{opacity:0;transform:translateY(22px);transition:opacity .7s,transform .7s}
+.reveal.visible{opacity:1;transform:none}
+@keyframes beat{0%,100%{transform:scale(1)}50%{transform:scale(1.18)}}
+@keyframes float{0%,100%{transform:translateY(0)}50%{transform:translateY(-25px)}}
+@keyframes fadeUp{from{opacity:0;transform:translateY(10px)}to{opacity:1;transform:none}}
+@keyframes rise{to{transform:translateY(-110vh) rotate(35deg);opacity:0}}
+@media(max-width:720px){
+  .nav{padding:14px 5vw}
+  .brand small{display:none}
+  .navlinks{gap:10px;font-size:9px;letter-spacing:.4px}
+  .navlinks a:nth-child(2){display:none}
+  .sound{padding:8px;font-size:10px}
+  .section{padding:70px 6vw}
+  .section-head{display:block}
+  .section-head p{margin-top:15px}
+  .note-grid,.memory-wrap{grid-template-columns:1fr}
+  .reasons{grid-template-columns:1fr}
+  .reason{min-height:0}
+  .hero p{font-size:14px}
+  .hero:after{right:6%;bottom:42px}
+  .daily-note{padding:18px}
+  .note-line{font-size:21px}
+}
+@media(prefers-reduced-motion:reduce){
+  *,*:before,*:after{animation:none!important;scroll-behavior:auto!important;transition:none!important}
+}
+</style>
+</head>
+<body>
+<div id="sprinkles"></div>
+
+<nav class="nav">
+  <a class="brand" href="#top">t<span>♡</span>j <small>made with ♡</small></a>
+  <div class="navlinks">
+    <a href="#little-things">little things</a>
+    <a href="#daily-note">little notes</a>
+    <a href="#moments">our page</a>
+    <a href="#letter">a letter</a>
+  </div>
+  <button class="sound" id="heartButton">♡ send love</button>
+</nav>
+
+<main id="top">
+<section class="hero">
+  <span class="orb one"></span><span class="orb two"></span><span class="orb three"></span>
+  <div>
+    <span class="hero-heart">♡</span>
+    <div class="eyebrow">a tiny corner of the internet, just for you</div>
+    <h1>Hey,<br><em>Tejashvi.</em></h1>
+    <p>I wanted to make you something that feels a little like you do to me — soft, special, and impossible to scroll past.</p>
+    <a href="#little-things" class="pill">there's something for you <span>↘</span></a>
+  </div>
+  <div class="scrollhint">scroll slowly · made with care</div>
+</section>
+
+<section class="section reveal" id="little-things">
+  <div class="section-head">
+    <div><div class="kicker">01 / the little things</div><h2>It's never just<br>the big moments.</h2></div>
+    <p>Sometimes it's the smallest things that end up meaning the most. The details you might not even notice.</p>
+  </div>
+  <div class="note-grid">
+    <article class="note featured">
+      <div class="number">NOTE NO. 01 — FOR YOU</div>
+      <h3>Your kind of magic.</h3>
+      <p>There's something about the way you are that makes an ordinary day feel a little less ordinary. I hope you never feel like you have to be anything other than yourself.</p>
+      <span class="deco">♡</span>
+    </article>
+    <article class="note">
+      <div class="number">NOTE NO. 02 — A REMINDER</div>
+      <h3>On the hard days, too.</h3>
+      <p>You don't have to be at your best every day. You can have quiet days, messy days, tired days. You deserve care on all of them.</p>
+      <span class="deco">✦</span>
+    </article>
+  </div>
+</section>
+
+<section class="section reveal">
+  <div class="section-head">
+    <div><div class="kicker">02 / things worth saying</div><h2>In case I don't<br>say it enough.</h2></div>
+    <p>Not grand promises. Just a few things I hope you always know.</p>
+  </div>
+  <div class="reasons">
+    <article class="reason"><div class="icon">☾</div><h3>You can be you.</h3><p>No pretending, no pressure to be perfect. The real you is more than enough.</p></article>
+    <article class="reason"><div class="icon">✧</div><h3>You matter.</h3><p>Your thoughts, your feelings, your little wins — they all deserve to be heard.</p></article>
+    <article class="reason"><div class="icon">♡</div><h3>I'm cheering for you.</h3><p>For the things you dream about, the things you work for, and the person you're becoming.</p></article>
+  </div>
+</section>
+
+<section class="section reveal" id="daily-note">
+  <div class="section-head">
+    <div><div class="kicker">a tiny pocket of happy</div><h2>Little reminders,<br>just for you.</h2></div>
+    <p>Tap the button whenever you need a tiny dose of softness. I made a few for you. ♡</p>
+  </div>
+  <div class="daily-note">
+    <div class="tiny-label">✦ note no. <span id="noteNumber">01</span> ✦</div>
+    <div class="note-line" id="dailyLine">You deserve the same gentleness you give everyone else. ♡</div>
+    <button class="small-button" id="nextNote">another little note ↻</button>
+  </div>
+</section>
+
+<section class="section reveal" id="moments">
+  <div class="memory-wrap">
+    <div class="memory-intro">
+      <div class="kicker">03 / a page for us</div>
+      <h2>More memories.<br>More little stories.</h2>
+      <p>This page is only the beginning. The best parts aren't the ones a website can describe — they're the moments we get to make ourselves.</p>
+      <a href="#letter" class="pill">one last thing <span>↘</span></a>
+    </div>
+    <div class="memory-card">
+      <div class="date">A little wish for you</div>
+      <blockquote>“May life be gentle with your heart, and may you always have reasons to smile that feel like your own.”</blockquote>
+      <small>— made for Tejashvi, with love ♡</small>
+    </div>
+  </div>
+</section>
+
+<section class="letter-area reveal" id="letter">
+  <div class="letter-box">
+    <div class="kicker">04 / open when you're ready</div>
+    <h2>A little letter<br><em style="color:var(--pink)">for my favourite person.</em></h2>
+    <p>Some things feel better when they're written down.<br>So I made you a little something.</p>
+    <button class="pill" id="openLetter">open your letter ♡</button>
+    <div class="letter-text" id="letterText">
+      <p>Dear Tejashvi,</p>
+      <p>I know a website can't say everything perfectly, but I still wanted to make you something that you could come back to whenever you wanted a small reminder that you're appreciated.</p>
+      <p>I hope you keep being your wonderfully unique self. I hope you get the happiness you give to other people, the confidence to chase what matters to you, and a thousand tiny reasons to smile.</p>
+      <p>Thank you for being part of my world. No fancy words can replace showing up, listening, and caring — and those are the things I want to keep doing, one day at a time.</p>
+      <p class="final-line">You, in a thousand little ways. ♡</p>
+      <p style="text-align:right">— always rooting for you</p>
+    </div>
+  </div>
+</section>
+</main>
+
+<footer class="footer">
+  <span class="big">for Tejashvi ♡</span>
+  <span class="handwritten">a little corner of the world that's yours</span>
+  <span class="madeby">made slowly, with care, and more than a few second thoughts about every little detail ✧</span>
+</footer>
+
+<script>
+const reduceMotion = window.matchMedia('(prefers-reduced-motion: reduce)').matches;
+const sprinkles = document.getElementById('sprinkles');
+
+function sendHearts() {
+  const symbols = ['♡','♥','✦','✧'];
+  for (let i = 0; i < 18; i++) {
+    const el = document.createElement('span');
+    el.className = 'heart-bit';
+    el.textContent = symbols[Math.floor(Math.random() * symbols.length)];
+    el.style.left = (Math.random() * 100) + '%';
+    el.style.top = (70 + Math.random() * 25) + '%';
+    el.style.color = ['#ff9ab8','#c9a8ff','#fff0f5'][Math.floor(Math.random() * 3)];
+    el.style.animationDuration = (1.6 + Math.random() * 1.7) + 's';
+    sprinkles.appendChild(el);
+    setTimeout(() => el.remove(), 3600);
+  }
+}
+
+document.getElementById('heartButton').addEventListener('click', sendHearts);
+
+document.getElementById('openLetter').addEventListener('click', function() {
+  const letter = document.getElementById('letterText');
+  letter.classList.toggle('open');
+  this.textContent = letter.classList.contains('open')
+    ? 'close letter ↑'
+    : 'open your letter ♡';
+
+  if (letter.classList.contains('open')) {
+    letter.scrollIntoView({
+      behavior: reduceMotion ? 'auto' : 'smooth',
+      block: 'nearest'
+    });
+    sendHearts();
+  }
+});
+
+const observer = new IntersectionObserver(entries => {
+  entries.forEach(entry => {
+    if (entry.isIntersecting) {
+      entry.target.classList.add('visible');
+      observer.unobserve(entry.target);
+    }
+  });
+}, {threshold: 0.12});
+
+document.querySelectorAll('.reveal').forEach(el => observer.observe(el));
+
+const tinyNotes = [
+  "You deserve the same gentleness you give everyone else. ♡",
+  "I hope something unexpectedly lovely happens to you today. ✧",
+  "You don't have to be perfect to be someone's favourite person.",
+  "Tiny reminder: your laugh belongs in more of your days. ♡",
+  "Whatever today looked like, I'm still cheering for you.",
+  "The world gets a little softer when you're being yourself. ☾",
+  "Please remember to be proud of the little things you do."
+];
+
+let tinyIndex = 0;
+const nextNote = document.getElementById('nextNote');
+
+nextNote.addEventListener('click', () => {
+  tinyIndex = (tinyIndex + 1) % tinyNotes.length;
+  const line = document.getElementById('dailyLine');
+  line.style.opacity = '0';
+  line.style.transform = 'translateY(5px)';
+
+  setTimeout(() => {
+    line.textContent = tinyNotes[tinyIndex];
+    document.getElementById('noteNumber').textContent =
+      String(tinyIndex + 1).padStart(2, '0');
+    line.style.opacity = '1';
+    line.style.transform = 'translateY(0)';
+  }, 180);
+
+  sendHearts();
+});
+</script>
+</body>
+</html>
